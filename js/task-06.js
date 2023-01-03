@@ -6,7 +6,7 @@ function onInputBlur(event) {
 
     const inputRef = event.currentTarget;
 
-    if(inputRef.value.length < +inputRef.dataset.length) {
+    if(inputRef.value.length < +inputRef.dataset.length || inputRef.value.length > +inputRef.dataset.length) {
 
         inputRef.classList.add('invalid');
         inputRef.classList.remove('valid');
